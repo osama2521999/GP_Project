@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ec675b25019c42f4b02a69ce3f38ce19" Name="Diagram1">
+        <EntityTypeShape EntityType="DatabaseModel.Department" Width="1.5" PointX="7.5" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Doctor" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Event" Width="1.5" PointX="7.5" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Favorite_Idea" Width="1.5" PointX="10.5" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Field" Width="1.5" PointX="10.5" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.History" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Request" Width="1.5" PointX="7.5" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Service" Width="1.5" PointX="7.5" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Sponsor" Width="1.5" PointX="5.25" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Student" Width="1.5" PointX="5.25" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Team" Width="1.5" PointX="3" PointY="19.625" IsExpanded="true" />
+        <AssociationConnector Association="DatabaseModel.FK__Departmen__Docto__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Departmen__Stude__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Departmen__Team___3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Field__Doctot_id__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__History__Doctor___52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Team__Doctor_id__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Event__Sponsor_i__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Favorite___Proje__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Favorite___Stude__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Field__Student_i__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Field__Team_id__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__History__Team_id__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Request__Doctor___403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Request__Sponsor__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Request__Team_id__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Service__Sponsor__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Student__Team_id__46E78A0C" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
