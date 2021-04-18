@@ -143,6 +143,11 @@
     <Content Include="Content\Layout\js\jquery-.js" />
     <Content Include="Content\Layout\js\npm.js" />
     <Content Include="Content\Layout\js\validate.js" />
+    <Content Include="Content\Login\css\style.css" />
+    <Content Include="Content\Login\js\bootstrap.min.js" />
+    <Content Include="Content\Login\js\jquery.min.js" />
+    <Content Include="Content\Login\js\main.js" />
+    <Content Include="Content\Login\js\popper.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Models\Model.Context.tt">
@@ -160,6 +165,8 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\DoctorController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -250,6 +257,10 @@
     <Content Include="Views\Admin\Student.cshtml" />
     <Content Include="Views\Admin\Doctor.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Doctor\Edit.cshtml" />
+    <Content Include="Views\Shared\_DoctorLayout.cshtml" />
+    <Content Include="Views\Doctor\MyProfile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

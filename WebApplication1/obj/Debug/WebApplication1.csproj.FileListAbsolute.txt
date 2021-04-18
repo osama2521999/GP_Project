@@ -65,7 +65,6 @@ F:\C# project\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.xml
 F:\C# project\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
 F:\C# project\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
 F:\C# project\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\C# project\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
 F:\C# project\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 F:\C# project\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 F:\C# project\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
@@ -74,3 +73,4 @@ F:\C# project\WebApplication1\WebApplication1\bin\EntityFramework.dll
 F:\C# project\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
 F:\C# project\WebApplication1\WebApplication1\bin\EntityFramework.xml
 F:\C# project\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+F:\C# project\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache

@@ -21,6 +21,7 @@
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="Max_team" ColumnName="Max_team" />
           <ScalarProperty Name="Last_login" ColumnName="Last_login" />
+          <ScalarProperty Name="Doctor_department" ColumnName="Doctor_department" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -29,6 +29,7 @@ namespace WebApplication1.Models
         public string Password { get; set; }
         public Nullable<int> Max_team { get; set; }
         public Nullable<System.DateTime> Last_login { get; set; }
+        public string Doctor_department { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Department> Department { get; set; }

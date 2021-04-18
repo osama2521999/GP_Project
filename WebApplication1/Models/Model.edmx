@@ -25,6 +25,7 @@
           <Property Name="Password" Type="nvarchar" MaxLength="50" />
           <Property Name="Max_team" Type="int" />
           <Property Name="Last_login" Type="date" />
+          <Property Name="Doctor_department" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Event">
           <Key>
@@ -431,6 +432,7 @@
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Max_team" Type="Int32" />
           <Property Name="Last_login" Type="DateTime" Precision="0" />
+          <Property Name="Doctor_department" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Department" Relationship="Self.FK__Departmen__Docto__3A81B327" FromRole="Doctor" ToRole="Department" />
           <NavigationProperty Name="Field" Relationship="Self.FK__Field__Doctot_id__4CA06362" FromRole="Doctor" ToRole="Field" />
           <NavigationProperty Name="History" Relationship="Self.FK__History__Doctor___52593CB8" FromRole="Doctor" ToRole="History" />
@@ -866,6 +868,7 @@
                 <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="Max_team" ColumnName="Max_team" />
                 <ScalarProperty Name="Last_login" ColumnName="Last_login" />
+                <ScalarProperty Name="Doctor_department" ColumnName="Doctor_department" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

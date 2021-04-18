@@ -2,6 +2,7 @@
 
 @{
     @model WebApplication1.Models.Doctor
+    //@model WebApplication1.Models.Department
     ViewBag.Title = "AddDoctor";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
@@ -30,7 +31,7 @@
 
 <body>
 
-    
+
 
     <div class="page-wrapper bg-white p-t-130 p-b-100 font-poppins">
         <div class="wrapper wrapper--w680">
@@ -50,7 +51,7 @@
                                 <div class="input-group">
                                     <label class="label">Max Team</label>
                                     <input class="input--style-4" type="text" name="Max_team" required>
-                                    @Html.ValidationMessageFor(model => model.Max_team, "", new { @class = "text-danger" })
+                                    @*@Html.ValidationMessageFor(model => model.Max_team, "", new { @class = "text-danger" })*@
                                 </div>
                             </div>
                         </div>
@@ -108,18 +109,32 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Section</label>
-                                    <input class="input--style-4" type="text" name="Section" required>
+                                    <label class="label">Department</label>
+                                    <input class="input--style-4" type="text" name="Doctor_department" required>
                                 </div>
                             </div>
+                            @*<div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Department</label>
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="Doctor_department" required>
+                                            <option disabled="disabled" selected="selected" >Choose option</option>
+                                            <option>cs</option>
+                                            <option>is</option>
+                                            <option>it</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>*@
                             <div class="col-2" hidden>
                                 <div class="input-group">
                                     <label class="label">Last Login</label>
-                                    <input class="input--style-4" type="datetime" value="@DateTime.Now"  name="Last_login">
+                                    <input class="input--style-4" type="datetime" value="@DateTime.Now" name="Last_login">
                                 </div>
                             </div>
                         </div>
-                        
+
 
 
                         <div class="p-t-15">

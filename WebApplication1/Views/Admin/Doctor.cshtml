@@ -54,7 +54,7 @@
                             <th scope="col">Required Langunge</th>
                             <th scope="col">Required Technology</th>
                             <th scope="col">Max Team</th>
-                            <th scope="col">Section</th>
+                            <th scope="col">Department</th>
                             <th scope="col">Last Login</th>
                         </tr>
                     </thead>
@@ -80,7 +80,7 @@
                                 @Html.DisplayFor(modelItem => item.Max_team)
                             </td>
                             <td>
-                                null
+                                @Html.DisplayFor(modelItem => item.Doctor_department)
                             </td>
                             
                             <td>
