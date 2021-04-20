@@ -42,13 +42,18 @@
 
 
             <div class="table-responsive">
-
+                <form method="get" action="@Url.Action("AddDoctor", "Admin")">
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Add Doctor" class="btn btn-danger" />
+                    </div>
+                </form>
+                
                 <table class="table table-striped custom-table">
                     <thead>
                         <tr>
                             @*<th scope="col">
 
-                            </th>*@
+                    </th>*@
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
                             <th scope="col">Required Langunge</th>
@@ -62,40 +67,40 @@
 
                         @foreach (var item in Model)
                         {
-                        <tr scope="row">
+                            <tr scope="row">
 
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Name)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Email)
-                            </td>
-                            <td>
-                                null
-                            </td>
-                            <td>
-                                null
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Max_team)
-                            </td>
-                            <td>
-                                null
-                            </td>
-                            
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Last_login)
-                            </td>
-                            <td>
-                                @*<a href="@Url.Action("Delete","Admin", new { id = item.Doctor_id })">Delete</a>*@
-                                <form method="get" action="@Url.Action("Delete","Admin", new { id = item.Doctor_id })">
-                                    <div class="form-actions no-color">
-                                        <input type="submit" value="Delete" class="btn btn-danger" />
-                                    </div>
-                                </form>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Name)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Email)
+                                </td>
+                                <td>
+                                    null
+                                </td>
+                                <td>
+                                    null
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Max_team)
+                                </td>
+                                <td>
+                                    null
+                                </td>
 
-                            </td>
-                        </tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Last_login)
+                                </td>
+                                <td>
+                                    @*<a href="@Url.Action("Delete","Admin", new { id = item.Doctor_id })">Delete</a>*@
+                                    <form method="get" action="@Url.Action("Delete","Admin", new { id = item.Doctor_id })">
+                                        <div class="form-actions no-color">
+                                            <input type="submit" value="Delete" class="btn btn-danger" />
+                                        </div>
+                                    </form>
+
+                                </td>
+                            </tr>
                         }
 
 

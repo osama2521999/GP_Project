@@ -1,0 +1,69 @@
+﻿
+
+@{
+    @model WebApplication1.Models.Sponsor
+    ViewBag.Title = "HomeSponsor";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<head>
+    <!-- Vendor CSS-->
+    <link href="~/Content/AddDoctor_css/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="~/Content/AddDoctor_css/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="~/Content/AddDoctor_css/css/main.css" rel="stylesheet" media="all">
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["Name"].value;
+            if (x == "" || x == null) {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    
+
+    <div class="page-wrapper bg-white p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">
+                        Hello @if (Model != null) {@Html.Label(Model.Name); }
+                    </h2>
+                    <form method="POST" @*action="@Url.Action("Doctor","Admin")"*@ name="myForm" onsubmit="return validateForm()" required>
+                        @Html.AntiForgeryToken()
+                       
+                        
+
+
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Edit Profile</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery JS-->
+    <script src="~/Content/AddDoctor_css/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Vendor JS-->
+    <script src="~/Content/AddDoctor_css/vendor/select2/select2.min.js"></script>
+    <script src="~/Content/AddDoctor_css/vendor/datepicker/moment.min.js"></script>
+    <script src="~/Content/AddDoctor_css/vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="~/Content/AddDoctor_css/js/global.js"></script>
+
+</body>

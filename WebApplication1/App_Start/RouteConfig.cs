@@ -18,6 +18,12 @@ namespace WebApplication1
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Admin", action = "AddDoctor", id = UrlParameter.Optional }
             );
+            routes.MapRoute
+                (
+                name: "Sponsor",
+                url: "{controller}/{action}/{id}",
+                defaults : new { controller = "Sponsor",action = "SponsorLogin",id = UrlParameter.Optional }
+            );
         }
     }
 }
