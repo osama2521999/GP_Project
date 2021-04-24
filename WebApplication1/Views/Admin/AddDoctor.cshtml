@@ -1,0 +1,161 @@
+﻿
+
+@{
+    @model WebApplication1.Models.Doctor
+    //@model WebApplication1.Models.Department
+    ViewBag.Title = "AddDoctor";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<head>
+    <!-- Vendor CSS-->
+    <link href="~/Content/AddDoctor_css/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="~/Content/AddDoctor_css/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="~/Content/AddDoctor_css/css/main.css" rel="stylesheet" media="all">
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["Name"].value;
+            if (x == "" || x == null) {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <div class="page-wrapper bg-white p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Add Doctor</h2>
+                    <form method="POST" @*action="@Url.Action("Doctor","Admin")"*@ name="myForm" onsubmit="return validateForm()" required>
+                        @Html.AntiForgeryToken()
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Name</label>
+                                    <input class="input--style-4" type="text" name="Name" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Max Team</label>
+                                    <input class="input--style-4" type="text" name="Max_team" required>
+                                    @*@Html.ValidationMessageFor(model => model.Max_team, "", new { @class = "text-danger" })*@
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 " type="email" name="Email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Required Language</label>
+                                    <div class=" rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Subject 1</option>
+                                            <option>Subject 2</option>
+                                            <option>Subject 3</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Password</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 " type="password" name="Password" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Required Technology</label>
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Subject 1</option>
+                                            <option>Subject 2</option>
+                                            <option>Subject 3</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Department</label>
+                                    <input class="input--style-4" type="text" name="Doctor_department" required>
+                                </div>
+                            </div>
+                            @*<div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Department</label>
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="Doctor_department" required>
+                                            <option disabled="disabled" selected="selected" >Choose option</option>
+                                            <option>cs</option>
+                                            <option>is</option>
+                                            <option>it</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>*@
+                            <div class="col-2" hidden>
+                                <div class="input-group">
+                                    <label class="label">Last Login</label>
+                                    <input class="input--style-4" type="datetime" value="@DateTime.Now" name="Last_login">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery JS-->
+    <script src="~/Content/AddDoctor_css/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Vendor JS-->
+    <script src="~/Content/AddDoctor_css/vendor/select2/select2.min.js"></script>
+    <script src="~/Content/AddDoctor_css/vendor/datepicker/moment.min.js"></script>
+    <script src="~/Content/AddDoctor_css/vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="~/Content/AddDoctor_css/js/global.js"></script>
+
+</body>
